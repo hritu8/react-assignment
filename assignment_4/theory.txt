@@ -1,0 +1,110 @@
+Q. Is JSX mandatory for React?
+No, You can write React components using plain JavaScript without JSX.
+However, JSX significantly improves code readability and maintainability.
+Without JSX, you’d use React.createElement() for creating elements
+
+Q. Is ES6 mandatory for React?
+No.
+Why Should You Learn ES6 for React?
+New Features:
+Classes: ES6 introduced class syntax, making it easier to create and manage components in React.
+Arrow Functions: Arrow functions provide concise syntax for defining functions, especially for event handlers.
+Variables (let, const, var): ES6 introduced let and const, which are preferred over var for variable declarations.
+Array Methods like .map(): These methods simplify working with arrays in React.
+Destructuring: ES6 allows destructuring objects and arrays, which is useful for extracting values from props or state.
+Modules: ES6 modules enable better organization of code and allow you to import/export components.
+
+Alternatives to ES6:
+While ES6 is recommended, you can still write React code using plain JavaScript without ES6 features.
+However, using ES6 improves code readability, maintainability, and developer productivity.
+
+Q. What is <React.Fragment></React.Fragment> and <></> ?
+
+<React.Fragment></React.Fragment>:
+<React.Fragment> (or simply <Fragment>) allows you to group elements without introducing an additional(div element) wrapper node in the DOM.
+function Post() {
+    return (
+      <React.Fragment>
+        <PostTitle />
+        <PostBody />
+      </React.Fragment>
+    );
+  }
+
+<> (Empty JSX Tag):
+The empty JSX tag (<>...</>) is a shorthand for <React.Fragment></React.Fragment>.
+It serves the same purpose as <React.Fragment> but is more concise.
+
+If you need to assign a key to the fragment, use the explicit <React.Fragment> syntax.
+
+
+Q. What is Virtual DOM?
+
+Virtual DoM
+. Virtval DOM is not just a concept of react.
+. It is a software engineening Concept
+we keep a representation of a DoM with us , which
+is known as virtual DoM . It is a representation 
+of Dom in our code.
+
+why do use need virtual DoM?
+we need Virtual Dom for something known as Reconcilialion.
+
+Q. What is Reconciliation in React?
+
+It is a algorithm that react uses to diff, one tree from
+other and it determines what needs to change in Ui and
+what not.
+It has  dif algo which finds out the difference between
+one tree and the other tree.
+
+Q. What is React Fiber?
+
+React Fiber is an internal engine change in React that focuses on the reconciliation process,
+which determines what changes need to be made to the UI in response to changes in the application state.
+
+Concepts and Terms:
+Virtual DOM: React Fiber uses a lightweight Virtual DOM representation in memory.
+Reconciliation: The algorithm that compares old and new trees to determine changes.
+Update: A change in data used to render a React app (usually the result of setState).
+
+Q. Why we need keys in React? When do we need keys in React?
+
+why key?
+A key is a special string attribute that you include when creating lists of elements in React.
+Keys help React identify which items in the list have changed, been added, or removed.
+They give an identity to elements, allowing React to optimize updates.
+
+when ?
+Whenever you render a dynamic list of elements (e.g., using map()), use keys.
+Keys help React efficiently update the DOM by minimizing unnecessary changes.
+hen elements in the list can be reordered, keys prevent confusion during updates.
+
+Suppose  we added one more div.
+Now, we have 5 div
+
+So, react will gets Confused that
+it will not Know  what the order of Div are.
+So,it will rerender everything
+But react is smart. we make react smart by giving it a key. ff i give
+him a key then it will exactly remember what needs to be update.
+
+Q. Can we use index as keys in React?
+
+No,Avoid assigning array indexes as keys, as it can lead to issues when the order changes.
+
+Q. What is props in React?
+
+Props (short for “properties”) in React are a fundamental concept used for passing data from a parent component to its child components.
+
+Q. What is a Config Driven UI ?
+
+Config Driven UI is a technique that allows you to create user interfaces based on a configuration file, such as JSON or a TypeScript file.
+Instead of hard-coding UI components, you define their layout, appearance, and behavior in a separate configuration, making the UI dynamic and customizable.
+
+Advantages:
+Dynamic Customization: You can easily change the UI by modifying the configuration without touching the code.
+Reusability: The same component can be reused across different scenarios by providing different configuration files.
+Maintainability: Updates and changes are centralized in the configuration, reducing redundancy.
+
+In summary, Config Driven UI allows you to create flexible, maintainable, and customizable user interfaces by externalizing configuration from the codebase.

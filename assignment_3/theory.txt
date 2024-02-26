@@ -1,0 +1,48 @@
+Q. what is JSX?
+
+It’s a syntax extension for JavaScript that allows developers to write HTML-like code directly within a JavaScript file.
+JSX enables us to write HTML elements in JavaScript and place them in the DOM without using createElement() or appendChild() methods.
+
+Q. JSX vs React.createElement ?
+
+Key Differences:
+In JSX, elements are directly nested within each other, avoiding arrays.
+JSX handles keys implicitly, whereas when rendering arrays with React.createElement, you need to provide keys explicitly.
+
+React.createElement=> object => HTML(dom)
+JSX => React.createElement=> object => HTML(dom)
+so, basically jsx uses React.createElement and this is done by babel .
+
+Q. Superpowers of JSX
+
+Readability and Expressiveness
+You can embed JavaScript expressions within curly braces { } in JSX.
+Optimized Compilation
+
+Q. Role of type attribute in script tag? What options can I use there?
+
+The type attribute in the <script> tag plays a crucial role in specifying the media type of the script.
+
+type="module" Attribute:
+When you include a script in your HTML using <script src="..."></script>, the browser treats it as a classic script (non-module script).
+However, when you specify type="module", you indicate that the script is an ES6 module.
+ES6 modules use the import and export syntax for managing dependencies and exposing functionality.
+If you wish to use imports or exports within your code, you’ll need to use <script type="module"> to reference your JavaScript from an HTML file
+Benefits of Using type="module":
+Scoping: Modules have their own scope, preventing global variable clashes.
+Asynchronous Loading: Modules are loaded asynchronously, improving performance.
+
+Q. {TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>} in JSX ?
+
+{TitleComponent}:
+When you use curly braces { } directly around a component name (e.g., {TitleComponent}), you are referencing the component itself.
+It does not create an instance of the component or render it. Instead, it’s like passing a function reference.
+This form is useful when you want to pass the component as a prop or store it in a variable.
+{<TitleComponent/>}:
+This syntax creates an instance of the TitleComponent component.
+It’s equivalent to calling React.createElement(TitleComponent).
+The component is rendered with its default props (if any).
+{<TitleComponent></TitleComponent>}:
+This is another way to create an instance of the TitleComponent.
+It explicitly specifies the opening and closing tags for the component.
+You can also pass props within the opening tag, like {<TitleComponent prop1="value" />}.

@@ -145,3 +145,13 @@ Q. what is browserslist?
 
 Browserslist is a configuration tool that allows developers to specify a target list of browsers for their projects. 
 It is widely used in various front-end tools and libraries to optimize code and styles for different browser environments.
+
+Q.  ^ - caret and ~ - tilda
+
+The caret symbol (^) is used to specify a range of compatible versions with the following rules:
+If the specified version is X.Y.Z, npm will allow installing any version X.(Y+1).Z up to, but not including, the next major version ((X+1).0.0).
+For example, "^1.2.3" allows installing versions 1.2.3, 1.3.0, 1.4.0, etc., but not 2.0.0.
+
+The tilde symbol (~) is used to specify a range of compatible versions with the following rules:
+If the specified version is X.Y.Z, npm will allow installing any version X.Y.(Z+1) up to, but not including, the next minor version (X.(Y+1).0).
+For example, "~1.2.3" allows installing versions 1.2.3, 1.2.4, 1.2.5, etc., but not 1.3.0.
