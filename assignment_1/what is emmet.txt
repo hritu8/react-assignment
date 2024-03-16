@@ -27,8 +27,16 @@ Why is React known as React?
 
 React, the JavaScript library for building user interfaces, is known as "React" because of its core concept of reacting to changes in data. When data changes in a React application, the user interface automatically updates to reflect those changes without the need for manual intervention.
 
-What is diference between React and ReactDOM?
+Q: What is crossorigin in script tag?
+A: The crossorigin attribute sets the mode of the request to an HTTP CORS Request.
+ The purpose of crossorigin attribute is used to share the resources from one domain to another domain. 
+ Basically, it is used to handle the CORS request. 
+ It is used to handle the CORS request that checks whether it is safe to allow for sharing the resources from other domains.
 
+
+
+
+What is diference between React and ReactDOM?
 
 React is a JavaScript library designed for building user interfaces.
 It provides tools and abstractions for creating reusable UI components, managing state, handling lifecycle events, and more.
@@ -73,7 +81,8 @@ What is async and defer?
 
 async and differ are boolean attributes which are used along with script tag to load the external scrpits efficiently into our web page.
  
-when we load our web page then two things are happening one is HTML parsing and second is the loading of the scripts. Loading of the script contains two parts one is the fetching the script from the network and second the actually execution the script line by line.
+when we load our web page then two things are happening one is HTML parsing and second is the loading of the scripts.
+Loading of the script contains two parts one is the fetching the script from the network and second the actually execution the script line by line.
 
 normal case:
 suppose browser is parsing html line by line and suddenly encounter a script tag .
@@ -81,7 +90,8 @@ so,browser pause or stops the parsing at that point of time and then sees the sc
 actually, js are blocking the rendering of HTML.
 
 async case:
-meanwhile, the HTML parsing is going on any of script with async tag are fectched from the network asyncronusly along with the HTML parsing . as soon as the script are fetched and available in the browser the HTML parsing stops and scripts are executing then and there.
+meanwhile, the HTML parsing is going on any of script with async tag are fectched from the network asyncronusly along with the HTML parsing .
+as soon as the script are fetched and available in the browser the HTML parsing stops and scripts are executing then and there.
 and once the execution is completed then HTML parsing continue to starts as regular.
 
 defer case:
@@ -92,5 +102,6 @@ async attribute doesn't guranteed the order of execution of the scripts but defe
 
 
 when to use what:
-suppose if we have multiple scripts which are dependent on each other then using async tag will not gurantee the order of execution and as a result it will break the code.so,in that case we should use defer.
+suppose if we have multiple scripts which are dependent on each other then using async tag will not gurantee the order of execution and as a result it will break the code.
+so,in that case we should use defer.
 
