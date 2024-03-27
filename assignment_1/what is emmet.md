@@ -1,5 +1,6 @@
 what is emmet?
 Emmet is a plugin for many popular text editors which greatly improves HTML & CSS workflow.
+---------------
 
 Difference between a Library and Framework?
 
@@ -11,6 +12,8 @@ framework provides generic fuctionalities and we add-on some features.
 
 ex: express,django,flask.
 
+--------------------------------
+
 What is CDN? Why do we use it?
 
 A CDN, or Content Delivery Network, is a network of geographically distributed servers that work together to deliver internet content to users more efficiently. CDNs store cached copies of content (such as web pages, images, videos, scripts, and other multimedia) in multiple locations around the world, known as points of presence (PoPs). When a user requests content from a website, the CDN serves the content from the nearest PoP rather than from the origin server where the content is hosted. This reduces latency and improves loading times for users, leading to a better overall user experience.
@@ -21,12 +24,13 @@ Faster Content Delivery: By serving content from servers located closer to the e
 Security: Some CDNs offer security features such as DDoS protection, web application firewalls, and SSL encryption.
 Scalability: CDNs help websites handle traffic spikes and surges in user demand by distributing the load across multiple servers.
 https://www.youtube.com/watch?v=NNqVbVO566Q
-
+----    
 
 Why is React known as React?
 
 React, the JavaScript library for building user interfaces, is known as "React" because of its core concept of reacting to changes in data. When data changes in a React application, the user interface automatically updates to reflect those changes without the need for manual intervention.
 
+--------------------------------
 Q: What is crossorigin in script tag?
 A: The crossorigin attribute sets the mode of the request to an HTTP CORS Request.
  The purpose of crossorigin attribute is used to share the resources from one domain to another domain. 
@@ -35,7 +39,7 @@ A: The crossorigin attribute sets the mode of the request to an HTTP CORS Reques
 
 
 
-
+----------------------------------------------------------------
 What is diference between React and ReactDOM?
 
 React is a JavaScript library designed for building user interfaces.
@@ -50,7 +54,7 @@ React contains functionality for both web and mobile apps, while ReactDOM is spe
 
 In summary, React is the core library for creating components, and ReactDOM handles the rendering of those components in the browser environment.
 
-
+----    
 
 What is difference between react.development.js and react.production.js files via CDN?
 
@@ -75,7 +79,7 @@ Usage:
 Deploy this version to production servers.
 It ensures better performance by reducing the payload sent to clients.
 
-
+----------------------------------------------------------------
 
 What is async and defer?
 
