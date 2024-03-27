@@ -97,9 +97,12 @@ async case:
 meanwhile, the HTML parsing is going on any of script with async tag are fectched from the network asyncronusly along with the HTML parsing .
 as soon as the script are fetched and available in the browser the HTML parsing stops and scripts are executing then and there.
 and once the execution is completed then HTML parsing continue to starts as regular.
+applications: async can be used when :
+                                  Third-party scripts arerequired, ex:ads .because we dont mind when the scripts runs(asnychronously).
 
 defer case:
 HTML parsing continue to goes on and the script are fetched in parallel and the HTML parsing are continues are goes on and these scripts are only executed after when the HTML parsing are fully completed.
+- maintains the relative order of the scripts. 
 
 note:
 async attribute doesn't guranteed the order of execution of the scripts but defer does.
