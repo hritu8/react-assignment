@@ -86,9 +86,13 @@ Q.  List down your favourite 5 superpowers of Parcel and describe any 3 of them 
 
   HMR(hot module replacement)
   minification -> reduces the number of line of code .
-                  Minification reduces the file size of your output bundles by removing whitespace, renaming variables to shorter names, and many other optimizations.
-  tree shaking -> removal of unwanted line of code or unused code
-  image optimisation
+                  Minification reduces the file size of your output bundles by removing whitespace, renaming variables to shorter names, and many other 
+  optimizations.
+                  
+  tree shaking -> removal of unwanted line of code or unused code.
+  diff: tree shaking focuses on removing unused modules or functions from the codebase, while minification focuses on reducing the size of the code by removing 
+  unnecessary characters and optimizing its structure.
+  image optimisation.
   caching -> it caches everything it build and saves the time  at the time of rebuild by building the new file .
 ----------------------------------------------------------------
 
